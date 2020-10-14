@@ -16,3 +16,6 @@ Bilg
 is 
 fun
 ''' )
+
+# with the usage of ''' we have the opprtunity of multi-line string printing
+
