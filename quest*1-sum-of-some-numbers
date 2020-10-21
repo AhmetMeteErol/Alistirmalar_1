@@ -2,7 +2,7 @@
 sums = 0
 
 
-for n in range(19,202,3):  # numbers between 19 and 202 and step by 3
+for n in range(19,203,3):  # numbers between 19 and 202 and step by 3
     sums += n
 
 print(sums)
