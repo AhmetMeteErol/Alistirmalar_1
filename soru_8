@@ -1,0 +1,17 @@
+# This programme returns the numbers that
+# at least 2 number in itself are equal 
+
+count = 0
+
+for i in range(100,1000,2):
+    if int(str(i)[0]) == int(str(i)[-1]):                           # 1st = 3rd ?
+        print(i)
+        count += 1
+    elif int(str(i)[1:2]) == int(str(i)[-1]):                       # 2nd = 3rd ?
+        print(i)
+        count += 1
+    elif int(str(i)[1:2]) == int(str(i)[-1]) == int(str(i)[0]):     # if all of them are equal
+        print(i)
+        count += 1
+      
+print(f"{count} numbers are as wanted.")
