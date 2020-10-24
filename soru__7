@@ -1,0 +1,11 @@
+# This programme returns the numbers that
+# first number + second number is equal to last number
+
+count = 0
+
+for i in range(100,1000):
+    if int(str(i)[0]) + int(str(i)[1:2]) == int(str(i)[-1]):
+        print(i)
+        count += 1
+
+print(f"{count} numbers are as wanted.")
