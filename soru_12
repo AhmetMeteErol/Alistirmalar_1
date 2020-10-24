@@ -1,0 +1,8 @@
+# This programme calculates which year user was born
+# taking into account 2005- abcd(birthYear) = a+b+c+d
+
+for i in range(1977,2005):          # We start from 1977 because it's the maximum age with 1+9+9+9
+    if (int(str(i)[0]) + int(str(i)[1]) + int(str(i)[2]) + int(str(i)[3])) == (2005-i):
+        print(f"He/She was born in {i}.")
+
+
