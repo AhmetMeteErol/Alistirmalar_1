@@ -1,0 +1,13 @@
+# This programme returns the five-digit numbers that
+# first two numbers are the same in last two numbers
+
+
+count = 0
+
+# First loop for 100-1000
+for i in range(10000,100000):
+    if str(i)[0:2] == str(i)[3:5] :
+        print(i)
+        count += 1
+print(f"{count} numbers are as wanted.")
+
