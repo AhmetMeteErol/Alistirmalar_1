@@ -1,3 +1,7 @@
+# This programme returns two numbers which are 
+# (f + s)*11 = fs
+
+
 for first_number in range(10,100):
     first_number = str(first_number)
     for second_number in range(10,100):
