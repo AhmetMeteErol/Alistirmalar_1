@@ -1,0 +1,20 @@
+# This code returns a number prompted is palindromic or not
+
+number_prompted = input("Please enter a number with 3 or 4 digits: ")
+
+# We verify if user prompted acceptable values
+if not(len(number_prompted) == 4) and not(len(number_prompted) == 3):       
+    print("Your number is not in the interval.")
+
+# Calculation Section
+if len(number_prompted) == 3:
+    if number_prompted[0:2] == number_prompted[-1:-3:-1]:
+        print(f"'{number_prompted}' is a palindromic number.")
+    else:
+        print(f"'{number_prompted}'is not palindromic.")
+elif len(number_prompted) == 4:
+    if number_prompted[0:3] == number_prompted[-1:-4:-1]:
+        print(f"'{number_prompted}' is a palindromic number.")
+    else:
+        print(f"'{number_prompted}'is not palindromic.")
+    
