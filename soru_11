@@ -1,0 +1,16 @@
+# This programme finds X that 125/X = 200/X = 350/X and their rest is same. We search the biggest rest.
+
+myList = []
+
+for i in range(1,350): 
+    rest_1 = 125 % i     
+    rest_2 = 200 % i     
+    rest_3 = 350 % i     
+
+    if (rest_1 == rest_2 == rest_3):      
+        i = str(i)                                                          # For adding in our list
+        myList.append(i)                                                    # We gather all in our empty list
+
+print(f"We were looking for {myList[-1]}.")                                 # Our list contains all rests in order 
+                                                                            # Because we used range function 
+                                                                            # so we can just take last indice
